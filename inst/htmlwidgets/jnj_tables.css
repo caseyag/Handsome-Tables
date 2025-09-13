@@ -1,0 +1,89 @@
+@import url('https://fonts.cdnfonts.com/css/telegraf');
+
+:root {
+  --bslib-navbar-default-bg: #fe2882;
+  --whitesmoke: #FCFFFF;
+  --watermelon: #ff6c71;
+  --flamingo: #fe2882;
+  --cobalt: #3a28fe;
+  --onyx: #1f1f1f;
+  --dark-grey: #34373f;
+}
+
+.jnj-table {
+   font-size: 12px;
+   font-family: 'Telegraf', 'Open Sans', sans-serif !important;
+   border-radius: 5px;
+   height: 200px;
+
+}
+
+.jnj-table span.colHeader {
+    font-size: 12px;
+    font-weight: 600;
+    white-space: normal;  /* Allow text wrapping */
+    max-width: 150px;     /* Optional: Set a max width for the headers */
+    text-align: center;   /* Optional: Center align text */
+    overflow-wrap: break-word;  /* Ensure wrapping of long words */
+}
+
+.jnj-table .changeType:hover, .jnj-table .htFiltersActive .changeType {
+  border: none;
+  color: var(--onyx);
+  cursor: pointer;
+  background: var(--whitesmoke);
+}
+
+.jnj-table .changeType:active {
+  border: none;
+  color: var(--onyx);
+}
+
+.jnj-table .changeType {
+  width: 16px;
+  color: var(--flamingo);
+  height: 16px;
+  font-size: 12px;
+  padding: 3px 2px;
+  border: none;
+}
+
+.jnj-table .changeType::before {
+  /*content: '▼ '; */
+  zoom: 0.9;
+}
+
+.jnj-table .ht__highlight {
+    background-color: transparent !important;
+}
+
+.jnj-table .htUIInput.htUIButtonOK {
+  margin-left:0;
+  margin-right:10px;
+}
+
+.jnj-table .htUIInput.htUIButtonOK{
+  margin-left:10px;
+  margin-right:0;
+
+}
+
+.htUIInput.htUIButtonOK input {
+  background-color: var(--flamingo) !important;
+  border-color: var(--flamingo) !important;
+  color: var(--whitesmoke);
+
+}
+
+.htUIInput.htUIButtonOK input:focus-visible {
+  background-color: var(--flamingo) !important;
+  border-color: var(--flamingo) !important;
+  color: var(--onyx);
+
+}
+
+.htUIInput.htUIButtonOK input:hover{
+  background-color: var(--watermelon) !important;
+  border-color: var(--watermelon) !important;
+
+}

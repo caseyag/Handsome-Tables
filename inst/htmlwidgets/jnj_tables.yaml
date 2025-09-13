@@ -1,0 +1,10 @@
+dependencies:
+ - name: handsontable
+   version: 1.0
+   src: htmlwidgets/libs/handsontable
+   script: handsontable.js
+   stylesheet: handsontable.css
+ - name: jnj-tables
+   version: 1.0
+   src: htmlwidgets
+   stylesheet: jnj_tables.css
