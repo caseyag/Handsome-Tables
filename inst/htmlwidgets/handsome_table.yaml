@@ -7,4 +7,5 @@ dependencies:
  - name: handsome_table
    version: 1.0
    src: htmlwidgets
-   stylesheet: handsome_tables.css
+   script: handsome_table.js
+   stylesheet: handsome_table.css

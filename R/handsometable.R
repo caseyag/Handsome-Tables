@@ -1,6 +1,6 @@
 #' Handsome Table
 #'
-#' An R Handsontable Wrapper
+#' A JS Handsontable Wrapper
 #'
 #' @param data data.frame to pass into the widget
 #'
@@ -26,7 +26,7 @@ handsome_table <- function(data, width = NULL, height = NULL, elementId = NULL) 
 
   # create widget
   htmlwidgets::createWidget(
-    name = 'handsome_tables',
+    name = 'handsome_table',
     x,
     width = width,
     height = height,

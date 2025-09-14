@@ -10,5 +10,5 @@ handsome_table(data, width = NULL, height = NULL, elementId = NULL)
 \item{data}{data.frame to pass into the widget}
 }
 \description{
-An R Handsontable Wrapper
+A JS Handsontable Wrapper
 }
