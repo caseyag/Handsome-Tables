@@ -4,7 +4,7 @@ dependencies:
    src: htmlwidgets/libs/handsontable
    script: handsontable.js
    stylesheet: handsontable.css
- - name: jnj-tables
+ - name: handsome_table
    version: 1.0
    src: htmlwidgets
-   stylesheet: jnj_tables.css
+   stylesheet: handsome_tables.css

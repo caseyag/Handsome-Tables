@@ -1,6 +1,6 @@
 HTMLWidgets.widget({
 
-  name: 'jnj_tables',
+  name: 'handsome_table',
 
   type: 'output',
 
@@ -100,7 +100,7 @@ HTMLWidgets.widget({
           manualColumnResize: true,
           autoColumnSize: true,
           wordWrap: true,
-          className: 'jnj-table',
+          className: 'handsome-table',
           licenseKey: 'non-commercial-and-evaluation',
           hiddenColumns: {
             columns: hiddenColumnsList, // Specify columns to hide initially

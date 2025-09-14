@@ -10,7 +10,7 @@
   --dark-grey: #34373f;
 }
 
-.jnj-table {
+.handsome-table {
    font-size: 12px;
    font-family: 'Telegraf', 'Open Sans', sans-serif !important;
    border-radius: 5px;
@@ -18,7 +18,7 @@
 
 }
 
-.jnj-table span.colHeader {
+.handsome-table span.colHeader {
     font-size: 12px;
     font-weight: 600;
     white-space: normal;  /* Allow text wrapping */
@@ -27,19 +27,19 @@
     overflow-wrap: break-word;  /* Ensure wrapping of long words */
 }
 
-.jnj-table .changeType:hover, .jnj-table .htFiltersActive .changeType {
+.handsome-table .changeType:hover, .handsome-table .htFiltersActive .changeType {
   border: none;
   color: var(--onyx);
   cursor: pointer;
   background: var(--whitesmoke);
 }
 
-.jnj-table .changeType:active {
+.handsome-table .changeType:active {
   border: none;
   color: var(--onyx);
 }
 
-.jnj-table .changeType {
+.handsome-table .changeType {
   width: 16px;
   color: var(--flamingo);
   height: 16px;
@@ -48,21 +48,21 @@
   border: none;
 }
 
-.jnj-table .changeType::before {
+.handsome-table .changeType::before {
   /*content: '▼ '; */
   zoom: 0.9;
 }
 
-.jnj-table .ht__highlight {
+.handsome-table .ht__highlight {
     background-color: transparent !important;
 }
 
-.jnj-table .htUIInput.htUIButtonOK {
+.handsome-table .htUIInput.htUIButtonOK {
   margin-left:0;
   margin-right:10px;
 }
 
-.jnj-table .htUIInput.htUIButtonOK{
+.handsome-table .htUIInput.htUIButtonOK{
   margin-left:10px;
   margin-right:0;
 

@@ -1,13 +1,13 @@
-#' J&J Table
+#' Handsome Table
 #'
-#' jnj table function with excel drop downs
+#' An R Handsontable Wrapper
 #'
 #' @param data data.frame to pass into the widget
 #'
 #' @import htmlwidgets
 #'
 #' @export
-jnj_tables <- function(data, width = NULL, height = NULL, elementId = NULL) {
+handsome_table <- function(data, width = NULL, height = NULL, elementId = NULL) {
 
   columns <- purrr::map(colnames(data), ~list(
      data = .x,
@@ -26,7 +26,7 @@ jnj_tables <- function(data, width = NULL, height = NULL, elementId = NULL) {
 
   # create widget
   htmlwidgets::createWidget(
-    name = 'jnj_tables',
+    name = 'handsome_tables',
     x,
     width = width,
     height = height,
@@ -35,32 +35,30 @@ jnj_tables <- function(data, width = NULL, height = NULL, elementId = NULL) {
   )
 }
 
-#' Shiny bindings for jnj_tables
+#' Shiny bindings for handsome_table
 #'
-#' Output and render functions for using jnj_tables within Shiny
+#' Output and render functions for using handsome_table within Shiny
 #' applications and interactive Rmd documents.
 #'
 #' @param outputId output variable to read from
 #' @param width,height Must be a valid CSS unit (like \code{'100\%'},
 #'   \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
 #'   string and have \code{'px'} appended.
-#' @param expr An expression that generates a jnj_tables
+#' @param expr An expression that generates a handsome_table
 #' @param env The environment in which to evaluate \code{expr}.
 #' @param quoted Is \code{expr} a quoted expression (with \code{quote()})? This
 #'   is useful if you want to save an expression in a variable.
 #'
-#' @name jnj_tables-shiny
+#' @name handsome_table-shiny
 #'
 #' @export
-jnj_tablesOutput <- function(outputId, width = '100%', height = '400px'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'jnj_tables', width, height, package = 'handsometable')
+handsome_tableOutput <- function(outputId, width = '100%', height = '400px'){
+  htmlwidgets::shinyWidgetOutput(outputId, 'handsome_table', width, height, package = 'handsometable')
 }
 
-#' @rdname jnj_tables-shiny
+#' @rdname handsome_table-shiny
 #' @export
-renderJnj_tables <- function(expr, env = parent.frame(), quoted = FALSE) {
+renderHandsome_table <- function(expr, env = parent.frame(), quoted = FALSE) {
   if (!quoted) { expr <- substitute(expr) } # force quoted
-  htmlwidgets::shinyRenderWidget(expr, jnj_tablesOutput, env, quoted = TRUE)
+  htmlwidgets::shinyRenderWidget(expr, handsome_tableOutput, env, quoted = TRUE)
 }
-
-# renderJnj_tables(jnj_tables(data.frame()))
