@@ -1,0 +1,27 @@
+Package: handsometable
+Title: Spreadsheet-Style Tables for R and 'shiny' with 'Handsontable'
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Casey", "Aguilar-Gervase", , "97caguilar@gmail.com", role = c("aut", "cre")),
+    person("Maya", "Gans", role = "aut"),
+    person("Handsoncode sp. z o.o.", role = c("cph"),
+           comment = "Bundled 'Handsontable' JavaScript library")
+  )
+Description: An 'htmlwidgets' wrapper around the 'Handsontable' JavaScript
+    library. Turns a data frame into a styled, spreadsheet-style table with
+    per-column filters, click-to-expand long text, and column freezing and
+    hiding, for use in R Markdown, Quarto and 'shiny' apps. The bundled
+    'Handsontable' library has its own license: it is free for
+    non-commercial use and evaluation, and commercial use requires a
+    license key from Handsontable.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports:
+    htmlwidgets,
+    purrr
+Suggests:
+    shiny,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.1

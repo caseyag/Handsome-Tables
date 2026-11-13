@@ -1,0 +1,10 @@
+handsometable bundles the Handsontable JavaScript library (version 14.5.0) in
+inst/htmlwidgets/libs/handsontable/.
+
+Handsontable is copyright (c) Handsoncode sp. z o.o. and is not covered by this
+package's MIT license. It is free for non-commercial use and evaluation, with
+the license key "non-commercial-and-evaluation". Commercial use requires a
+commercial license from Handsontable; pass that key to
+handsome_table(license_key = ...).
+
+License details: https://handsontable.com/docs/software-license/

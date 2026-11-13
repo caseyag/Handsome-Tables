@@ -1,0 +1,11 @@
+dependencies:
+ - name: handsontable
+   version: 1.0
+   src: htmlwidgets/libs/handsontable
+   script: handsontable.js
+   stylesheet: handsontable.css
+ - name: handsome_table
+   version: 1.0
+   src: htmlwidgets
+   script: handsome_table.js
+   stylesheet: handsome_table.css
