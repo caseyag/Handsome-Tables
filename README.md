@@ -11,7 +11,7 @@ Spreadsheet-style tables for R and Shiny, built on the [Handsontable](https://ha
 - a right-click menu to freeze, unfreeze, hide and unhide columns
 - resizable columns, wrapped headers, and a height that follows the window
 
-[Live demo](https://caseyag.github.io/work/handsome-table/)
+[Live demo](https://caseyag.co/work/handsome-table/)
 
 ## Installation
 
